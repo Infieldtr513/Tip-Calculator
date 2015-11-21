@@ -1,32 +1,18 @@
-body {
-  text-align: center;
-}
-
-.container {
-  width: 50%;
-  margin: 5% auto;
-
-}
-
-label {
-  display: block;
-  margin: 2%;
-}
-
 .cust-percent-hide {
   display: none;
 }
 
-.cust-percent-show {
-  display: inline-block;
+
+
+/*body {
+  text-align: center;
 }
 
-.left-col, .right-col {
-  display: inline-block;
-  width: 49%
+.input-group {
+  width: 48%;
+  margin: 0 auto;
 }
 
-button{
-  display: block;
-  margin: 5% auto;
-}
+.col-right {
+  float: left;
+}*/

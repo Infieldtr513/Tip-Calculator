@@ -3,37 +3,44 @@
   <head>
     <meta charset="utf-8">
     <title>Tip Calculator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
     <link rel="stylesheet" href="tip.css" media="screen" title="no title" charset="utf-8">
   </head>
   <body>
-    <div class="container">
-      <h2>Tip Calculator</h2>
-      <div class="user-input">
-        <form action="index.html" method="post">
-          <div class="left-col">
-            <label for="bill">Bill Amount</label>
-            <span>$</span>
-            <input type="number" name="bill-amt" placeholder="10.25" id="bill">
-          </div>
-          <div class="right-col">
-            <label for="tip-percent"> Tip Percentage</label>
-            <select name="percent-box">
-              <option value="10">10 %</option>
-              <option value="15">15 %</option>
-              <option value="custom">Custom</option>
-            </select>
-            <div class="cust-percent-hide" id="cust-percent">
-              <label for="custom">Custom Percent</label>
-              <input type="number" name="Custom Percent" placeholder="25" id="custom">
-              <span>%</span>
+    <div class="container text-center">
+      <div class="row">
+        <h1>Tip Calculator</h1>
+        <div>
+          <span class="glyphicon glyphicon-pencil"></span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 col-md-offset-3 text-center">
+          <h5>Total Amount</h5>
+          <div class="input-group">
+            <span class="input-group-addon">$</span>
+            <input type="text" class="form-control" placeholder="10.25" id="bill">
+          </div><!-- /input-group -->
+        </div><!-- /.col-lg-6 -->
+        <div class="col-md-3 text-center">
+          <h5>Tip Pecentage<h5>
+          <div class="btn-group percent-options" role="group" aria-label="...">
+            <button type="button" class="btn btn-default">10%</button>
+            <button type="button" class="btn btn-default">15%</button>
+            <div class="input-group" id="cust-percent">
+              <input type="number" name="Custom Percent" placeholder="25" class="form-control" id="custom">
+              <span class="input-group-addon">%</span>
             </div>
           </div>
-        </form>
-        <button type="button" name="button">Calculate</button>
-      </div>
-      <h3>Tip Amount</h3>
-      <p id="tip-amt"></p>
-      <p id="total-amt"></p>
+
+        </div><!-- /input-group -->
+      </div><!-- /.col-lg-6 -->
+    </div><!-- /.row -->
+    <div>
+    <div class="row text-center">
+      <h2>Tip Amount</h2>
+      <h3 id="tip-amt"></h3>
+      <h3 id="total-amt"></h3>
     </div>
 
     <script type="text/javascript" src="/tip.js"></script>
