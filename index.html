@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="tip.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+    <div class="container">
+      <h2>Tip Calculator</h2>
+      <div class="user-input">
+        <form action="index.html" method="post">
+          <div class="left-col">
+            <label for="bill">Bill Amount</label>
+            <span>$</span>
+            <input type="number" name="bill-amt" placeholder="10.25" id="bill">
+          </div>
+          <div class="right-col">
+            <label for="tip-percent"> Tip Percentage</label>
+            <select name="percent-box">
+              <option value="10">10 %</option>
+              <option value="15">15 %</option>
+              <option value="custom">Custom</option>
+            </select>
+            <div class="cust-percent-hide" id="cust-percent">
+              <label for="custom">Custom Percent</label>
+              <input type="number" name="Custom Percent" placeholder="25" id="custom">
+              <span>%</span>
+            </div>
+          </div>
+        </form>
+        <button type="button" name="button">Calculate</button>
+      </div>
+      <h3>Tip Amount</h3>
+      <p id="tip-amt"></p>
+      <p id="total-amt"></p>
+    </div>
+
+    <script type="text/javascript" src="/tip.js"></script>
+  </body>
+</html>
